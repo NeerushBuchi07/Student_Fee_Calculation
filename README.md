@@ -48,3 +48,74 @@ This system simplifies the complex process of student fee management by automati
 ### 💰 Fee Management
 - Automatic fee calculation based on department
 - Payment recording with multiple methods (Cash, Card, UPI, Bank Transfer)
+- Real-time balance tracking
+- Payment history view
+
+### 🏆 Scholarship System
+- View detailed fee breakdown
+- Track payment history and remaining balance
+
+## 🚀 Deployment Guide
+
+### Prerequisites:
+- Python 3.x
+- MySQL Server
+- Flask and required packages (`flask, flask-mysqldb, flask-cors`)
+
+### Steps:
+
+1. **Database Setup**
+   - Create database using `crt_db_1.sql`
+   - Configure MySQL connection in `app.py`:
+     ```python
+     app.config['MYSQL_HOST'] = 'localhost'
+     app.config['MYSQL_USER'] = 'root'
+     app.config['MYSQL_PASSWORD'] = 'root'
+     app.config['MYSQL_DB'] = 'db1'
+     ```
+
+2. **Backend Setup**
+   - Install requirements:
+     ```bash
+     pip install flask flask-mysqldb flask-cors
+     ```
+   - Run Flask app:
+     ```bash
+     python app.py
+     ```
+
+3. **Frontend Setup**
+   - Open HTML files in browser or deploy to web server
+   - All frontend files connect to `http://localhost:5000` by default
+
+4. **Access the System**
+   - Start with `index.html` as the main portal
+   - Use navigation to access different features
+
+## 📦 Project Structure
+
+- `app.py`: Flask backend with all API endpoints
+- `crt_db_1.sql`: Database schema and initial data
+- HTML Files:
+  - `index.html`: Main portal with navigation
+  - `apply.html`: Student admission form
+  - `status.html`: Application status checker
+  - `balance.html`: Fee payment tracker
+  - `apply_scholarship.html`: Scholarship application
+  - `scholarships.html`: Scholarship management
+  - `add_department.html`: Department management
+  - `add_payments.html`: Fee payment recording
+  - `update_status.html`: Application status updates
+
+## 🚧 Future Enhancements
+- Admin dashboard for comprehensive management
+- Email notifications for application updates
+- Bulk payment processing
+- Financial reports generation
+- User authentication and roles
+- Mobile app integration
+
+## 👥 Authors
+Akhil - 231FA04087, Gowtham - 231FA04094, Neerush - 231FA04109 
+
+B.Tech CSE, VFSTR University
